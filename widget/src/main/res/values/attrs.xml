@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--CircleBGView要用的属性-->
+    <declare-styleable name="CircleBGView">
+        <attr name="bg_color" format="color"></attr>
+        <attr name="bg_width" format="dimension"></attr>
+        <attr name="bg_height" format="dimension"></attr>
+    </declare-styleable>
+
+    <!--RoundImageView的要用的属性-->
+    <declare-styleable name="RoundImageView">
+        <attr name="round_type" format="integer"></attr>
+        <attr name="round_topLeft" format="dimension"></attr>
+        <attr name="round_topRight" format="dimension"></attr>
+        <attr name="round_bottomLeft" format="dimension"></attr>
+        <attr name="round_bottomRight" format="dimension"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="ConvenientBanner">
+        <attr name="dot_width" format="dimension"></attr>
+        <attr format="boolean" name="canLoop"/>
+    </declare-styleable>
+
+    <declare-styleable name="NinthPalaceViewGroup">
+        <attr name="itemgap" format="dimension"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="BackgroundTextView">
+        <attr name="text_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="LoginTextView">
+        <attr name="login_color" format="color"/>
+
+    </declare-styleable>
+    
+    <declare-styleable name="HotRecommendViewGroup">
+        <attr name="paddingLeft" format="dimension"/>
+        <attr name="paddingTop" format="dimension"/>
+        <attr name="paddingRight" format="dimension"/>
+        <attr name="paddingBottom" format="dimension"/>
+        <attr name="paddingX" format="dimension"/>
+        <attr name="paddingY" format="dimension"/>
+    </declare-styleable>
+
+
+
+</resources>
