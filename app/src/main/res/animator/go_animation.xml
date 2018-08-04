@@ -1,0 +1,14 @@
+<animator xmlns:android="http://schemas.android.com/apk/res/android"
+    android:valueFrom="0"
+    android:valueTo="1000"
+    android:valueType="intType"
+
+
+    android:duration="1000"
+    android:startOffset="0"
+    android:fillBefore="true"
+    android:fillAfter="false"
+    android:fillEnabled="true"
+    android:repeatMode="restart"
+    android:repeatCount="0" />
+

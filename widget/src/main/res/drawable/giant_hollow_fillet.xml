@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"
+    >
+
+    <!--主页火热游戏推荐TextView圆角-->
+    <stroke android:color="@color/app_run"
+        android:width="0.6dp"
+        />
+
+    <corners android:topLeftRadius="14dp"
+        android:topRightRadius="14dp"
+        android:bottomRightRadius="14dp"
+        android:bottomLeftRadius="14dp"/>
+
+
+
+</shape>

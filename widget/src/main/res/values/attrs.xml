@@ -29,7 +29,7 @@
         <attr name="text_color" format="color"/>
     </declare-styleable>
 
-    <declare-styleable name="LoginTextView">
+    <declare-styleable name="ZoomRotateAnimation">
         <attr name="login_color" format="color"/>
 
     </declare-styleable>
@@ -42,7 +42,6 @@
         <attr name="paddingX" format="dimension"/>
         <attr name="paddingY" format="dimension"/>
     </declare-styleable>
-
 
 
 </resources>

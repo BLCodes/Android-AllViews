@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--手机号/账号-->
+        <RelativeLayout
+            android:background="@drawable/re_solid_r12_gray"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp">
+
+
+            <EditText
+                android:id="@+id/et_login_name"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:textSize="12sp"
+                android:hint="手机号"
+                android:paddingLeft="10dp"
+                android:textColorHint="@color/app_gray"/>
+
+
+            <ImageView
+                android:id="@+id/iv_login_again"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:src="@mipmap/login_again"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:padding="4dp"
+                android:visibility="invisible"
+                />
+
+        </RelativeLayout>
+
+
+        <!--密码/验证码-->
+        <com.administrator.widget.SideslipButtonLayout
+            android:id="@+id/ll_login_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+
+            <!--验证码-->
+            <RelativeLayout
+                android:id="@id/id_previous"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/re_solid_r12_gray">
+
+                <EditText
+                    android:id="@+id/et_login_proving"
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@null"
+                    android:hint="验证码"
+                    android:paddingLeft="16dp"
+                    android:textColorHint="@color/app_gray"
+                    android:textSize="12sp" />
+
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="1dp"
+                    android:layout_toLeftOf="@+id/tv_login_proving"
+                    android:background="@color/color_fff"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_login_proving"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:text="发送验证码"
+                    android:padding="6dp"
+                    android:textColor="@color/app_color"
+                    android:textSize="12sp" />
+
+
+
+
+            </RelativeLayout>
+
+
+            <!--密码-->
+            <RelativeLayout
+                android:id="@id/id_next"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@drawable/re_solid_r12_gray">
+
+
+                <EditText
+                    android:layout_centerVertical="true"
+                    android:id="@+id/et_login_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@null"
+                    android:hint="登录密码"
+                    android:layout_gravity="center"
+                    android:paddingLeft="16dp"
+                    android:textColorHint="@color/app_gray"
+                    android:textSize="12sp" />
+
+
+            </RelativeLayout>
+
+
+
+        </com.administrator.widget.SideslipButtonLayout>
+
+
+
+        <RelativeLayout
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_login_code"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/app_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="密码登录"
+                android:padding="6dp"
+                android:layout_marginTop="6dp"
+                android:textSize="14sp"/>
+
+
+            <com.administrator.widget.ZoomRotateAnimation
+                android:id="@+id/tv_login_login"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="登      录"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:layout_below="@+id/tv_login_code"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/app_gray"
+                app:login_color="@color/light_gray"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
